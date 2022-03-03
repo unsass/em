@@ -1,6 +1,6 @@
 {
     "name": "@unsass/em",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "description": "Easily manage your em conversion.",
     "scripts": {
         "lint:css": "stylelint --fix \"**/*.scss\"",
