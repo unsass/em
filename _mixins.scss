@@ -1,0 +1,44 @@
+// ============================================================================================= //
+//                                            MIXINS                                             //
+// ============================================================================================= //
+
+@use "@unsass/css";
+@use "./functions";
+
+///
+/// @example - scss
+///   .foo {
+///     @include em.declaration(font-size, 16px, 16px);
+///   }
+///
+/// @example - css
+///   .foo {
+///     font-size: 1em;
+///   }
+///
+/// @example - scss
+///   .foo {
+///     @include em.declaration(margin, 16px 20px, 16px);
+///   }
+///
+/// @example - css
+///   .foo {
+///     margin: 1em 1.25em;
+///   }
+///
+/// @example - scss
+///   .foo {
+///     @include em.declaration(border, 1px solid darkcyan, 16px);
+///   }
+///
+/// @example - css
+///   .foo {
+///     border: 0.0625em solid darkcyan;
+///   }
+///
+/// @see {mixin} css.declaration
+/// @see {function} functions.convert
+///
+@mixin declaration($property, $value, $context, $important: false) {
+    @include css.declaration($property, functions.convert($value, $context), $important);
+}

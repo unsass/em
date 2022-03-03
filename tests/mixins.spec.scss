@@ -1,0 +1,56 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../index" as em;
+
+@include describe("em.declaration()") {
+    @include it("Should return single value declaration.") {
+        @include assert {
+            @include output {
+                .foo {
+                    @include em.declaration(font-size, 16px, 16px);
+                }
+            }
+
+            @include expect {
+                .foo {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+
+    @include it("Should return multiple values declaration.") {
+        @include assert {
+            @include output {
+                .foo {
+                    @include em.declaration(margin, 16px 20px, 16px);
+                }
+            }
+
+            @include expect {
+                .foo {
+                    margin: 1em 1.25em;
+                }
+            }
+        }
+    }
+
+    @include it("Should return mixed values declaration.") {
+        @include assert {
+            @include output {
+                .foo {
+                    @include em.declaration(border, 1px solid darkcyan, 16px);
+                }
+            }
+
+            @include expect {
+                .foo {
+                    border: 0.0625em solid darkcyan;
+                }
+            }
+        }
+    }
+}
