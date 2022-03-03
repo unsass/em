@@ -1,7 +1,7 @@
 {
     "name": "@unsass/em",
     "version": "0.0.0",
-    "description": "Easily manage your rem conversion.",
+    "description": "Easily manage your em conversion.",
     "scripts": {
         "test": "jest",
         "prepare": "husky install"

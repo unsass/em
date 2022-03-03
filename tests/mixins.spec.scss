@@ -53,4 +53,20 @@
             }
         }
     }
+
+    @include it("Should return comma-separated values declaration.") {
+        @include assert {
+            @include output {
+                .foo {
+                    @include em.declaration(box-shadow, (0 0 10px 5px rgba(darkcyan, 0.75), inset 0 0 10px 5px rgba(darkcyan, 0.75)), 16px);
+                }
+            }
+
+            @include expect {
+                .foo {
+                    box-shadow: 0 0 0.625em 0.3125em rgba(0, 139, 139, 0.75), inset 0 0 0.625em 0.3125em rgba(0, 139, 139, 0.75);
+                }
+            }
+        }
+    }
 }
