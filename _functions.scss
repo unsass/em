@@ -1,0 +1,79 @@
+// ============================================================================================= //
+//                                           FUNCTIONS                                           //
+// ============================================================================================= //
+
+@use "sass:list";
+@use "sass:math";
+@use "sass:meta";
+@use "@sass-collective/strip-unit";
+
+///
+/// @example - scss
+///   .foo {
+///     font-size: em.convert(16px, 16px);
+///   }
+///
+/// @example - css
+///   .foo {
+///     font-size: 1em;
+///   }
+///
+/// @example - scss
+///   .foo {
+///     margin: em.convert(16px 20px, 16px);
+///   }
+///
+/// @example - css
+///   .foo {
+///     margin: 1em 1.25em;
+///   }
+///
+/// @example - scss
+///   .foo {
+///     border: em.convert(1px solid darkcyan, 16px);
+///   }
+///
+/// @example - css
+///   .foo {
+///     border: 0.0625em solid darkcyan;
+///   }
+///
+/// @param {arglist} $values - List of values.
+///     Be careful, the last element must be the `em` context, a {number} in pixel.
+///
+@function convert($values...) {
+    $result: ();
+    $context: list.nth($values, -1);
+    $separator: list.separator($values);
+
+    @if list.length($values) == 1 {
+        @error "Context value missing for `em` conversion. Choose a number as the last value in the list.";
+    } @else if meta.type-of($context) != "number" {
+        @error "Invalid `#{meta.type-of($context)}` type for context value. Choose a number type instead.";
+    } @else if meta.type-of($context) == "number" and not math.is-unitless($context) and math.unit($context) != "px" {
+        @error "Invalid unit `#{math.unit($context)}` on value `#{$context}`. Choose value with `px` unit instead or without unit.";
+    } @else {
+        $context: strip-unit.strip($context);
+    }
+
+    @for $item from 1 through list.length($values) - 1 {
+        $value: list.nth($values, $item);
+
+        @if meta.type-of($value) == "number" and not math.is-unitless($value) and math.unit($value) != "px" {
+            @error "Invalid unit on value `#{$value}`. Choose value with `px` unit instead or without unit.";
+        } @else if meta.type-of($value) == "number" and not math.is-unitless($value) {
+            $value: strip-unit.strip($value);
+        }
+
+        @if meta.type-of($value) == "number" and $value != 0 {
+            $result: list.append($result, math.div($value, $context) * 1em);
+        } @else if meta.type-of($value) == "list" {
+            $value: list.append($value, $context);
+            $result: list.append($result, convert($value...), $separator);
+        } @else {
+            $result: list.append($result, $value);
+        }
+    }
+
+    @return $result;
+}
