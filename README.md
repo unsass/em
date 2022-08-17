@@ -8,10 +8,6 @@
 
 Sass functions and mixins to use em units.
 
-> **Note:** this is new code moved
-> from [`@sass-collective/em`](https://github.com/sass-collective/sass-collective/tree/master/packages/em) repository.
-
-
 ## Installing
 
 ```shell
