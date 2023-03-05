@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.0](https://github.com/unsass/em/compare/v2.0.1...v2.1.0) (2023-03-05)
+
+
+### Features
+
+* **deps:** bump to `sass` 1.58.3 ([6e2dd45](https://github.com/unsass/em/commit/6e2dd456cddcfde47dfcc6814456795f7f49f747))
+
 ## [2.0.1](https://github.com/unsass/em/compare/v2.0.0...v2.0.1) (2022-08-17)
 
 
