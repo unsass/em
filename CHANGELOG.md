@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.0](https://github.com/unsass/em/compare/v2.1.0...v2.2.0) (2024-02-21)
+
+
+### Features
+
+* **deps:** drop node 16 for 18 ([330c7ec](https://github.com/unsass/em/commit/330c7ec0f4c719b637c433709a66fd1e80bb2e69))
+
+
+### Bug Fixes
+
+* **deps:** prevent dependencies vulnerabilities ([d2237f5](https://github.com/unsass/em/commit/d2237f50277bfc156a88477b124dc0ed1955d8b6))
+
+
+### Build System
+
+* **deps:** bump to `sass` 1.71.1 ([0a22d17](https://github.com/unsass/em/commit/0a22d177eabfde16c762d944d6833cbd2e929490))
+
 ## [2.1.0](https://github.com/unsass/em/compare/v2.0.1...v2.1.0) (2023-03-05)
 
 
