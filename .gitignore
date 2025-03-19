@@ -1,6 +1,7 @@
 ## Files
 *.log
 *.orig
+.env
 junit.xml
 
 ## Folders
