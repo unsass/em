@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 2.3.0 (2025-05-02)
+
+* chore: removed unneeded `jest.config.js` file ([d1d0748](https://github.com/unsass/em/commit/d1d0748))
+* chore: switch to ESM ([5bfe490](https://github.com/unsass/em/commit/5bfe490))
+* chore(deps): bump to `sass-true` 8.1.0 ([98ad75e](https://github.com/unsass/em/commit/98ad75e))
+* chore(deps): bump to `stylelint` 16.16.0 ([8de961d](https://github.com/unsass/em/commit/8de961d))
+* chore(deps): clean `package-lock.json` ([aa2f30b](https://github.com/unsass/em/commit/aa2f30b))
+* chore(deps): prevent dependencies vulnerabilities ([969e525](https://github.com/unsass/em/commit/969e525))
+* chore(deps): prevent dependencies vulnerabilities ([37d2c68](https://github.com/unsass/em/commit/37d2c68))
+* test(deps): switch from jest to vitest ([26b4243](https://github.com/unsass/em/commit/26b4243))
+* ci: rename `node.js.yml` to `publish.yml` ([f920ddf](https://github.com/unsass/em/commit/f920ddf))
+* feat(deps): bump to `@unsass/css` 3.0.0 ([13caf1f](https://github.com/unsass/em/commit/13caf1f))
+
 ## [2.2.0](https://github.com/unsass/em/compare/v2.1.0...v2.2.0) (2024-02-21)
 
 
