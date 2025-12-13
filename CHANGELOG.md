@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>2.3.1 (2025-12-13)</small>
+
+* chore(deps-dev): bump to `@commitlint/cli` 20.2.0 ([29a21f0](https://github.com/unsass/em/commit/29a21f0))
+* chore(deps-dev): bump to `sass-true` 10.0.1 ([b95836f](https://github.com/unsass/em/commit/b95836f))
+* chore(deps-dev): bump to `semantic-release` 25.0.2 ([cf02b18](https://github.com/unsass/em/commit/cf02b18))
+* chore(deps-dev): bump to `stylelint-config-unsass` 2.0.0 ([9fcb21f](https://github.com/unsass/em/commit/9fcb21f))
+* chore(deps-dev): bump to `stylelint-config-unsass` 2.2.0 ([c0fa483](https://github.com/unsass/em/commit/c0fa483))
+* chore(deps-dev): bump to `vitest` 3.2.3 ([98bf143](https://github.com/unsass/em/commit/98bf143))
+* chore(deps): bump to `@unsass/css` 3.0.1 ([2255205](https://github.com/unsass/em/commit/2255205))
+* chore(deps): bump to `sass` 1.96.0 ([09d1972](https://github.com/unsass/em/commit/09d1972))
+* ci: update `publish.yml` ([e424bc0](https://github.com/unsass/em/commit/e424bc0))
+* ci: use `release.config.js` instead of `.releaserc.json` ([87b770f](https://github.com/unsass/em/commit/87b770f))
+
 ## 2.3.0 (2025-05-02)
 
 * chore: removed unneeded `jest.config.js` file ([d1d0748](https://github.com/unsass/em/commit/d1d0748))
