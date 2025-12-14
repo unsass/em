@@ -7,27 +7,15 @@ export default {
         'main',
         '+([0-9])?(.{+([0-9]),x}).x',
         {
-            'name': 'beta',
-            'prerelease': true
+            name: 'beta',
+            prerelease: true
         }
     ],
     plugins: [
         [
             '@semantic-release/commit-analyzer',
             {
-                preset: 'conventionalcommits',
-                releaseRules: [
-                    {
-                        type: 'chore',
-                        scope: 'deps',
-                        release: 'patch'
-                    },
-                    {
-                        type: 'chore',
-                        scope: 'deps-dev',
-                        release: false
-                    }
-                ]
+                preset: 'conventionalcommits'
             }
         ],
         [
@@ -43,16 +31,6 @@ export default {
                         {
                             type: 'fix',
                             section: 'Bug Fixes'
-                        },
-                        {
-                            type: 'chore',
-                            scope: 'deps',
-                            section: 'Dependencies'
-                        },
-                        {
-                            type: 'chore',
-                            scope: 'deps-dev',
-                            hidden: true
                         },
                         {
                             type: 'chore',
