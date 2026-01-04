@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.4.0](https://github.com/unsass/em/compare/v2.3.1...v2.4.0) (2026-01-04)
+
+### Dependencies
+
+* **deps:** bump to `@unsass/css` 3.1.0 ([ea3d193](https://github.com/unsass/em/commit/ea3d1930eaae6021ad864aa4e803c07fa6d5cf9a))
+* **deps:** bump to `sass` 1.97.1 ([b11dbca](https://github.com/unsass/em/commit/b11dbca2a041002d3de95514dc6c576ba5dc75a8))
+
 ## <small>2.3.1 (2025-12-13)</small>
 
 * chore(deps-dev): bump to `@commitlint/cli` 20.2.0 ([29a21f0](https://github.com/unsass/em/commit/29a21f0))
