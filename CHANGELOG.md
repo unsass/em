@@ -9,30 +9,17 @@ All notable changes to this project will be documented in this file. See [Conven
 * **deps:** bump to `@unsass/css` 3.1.0 ([ea3d193](https://github.com/unsass/em/commit/ea3d1930eaae6021ad864aa4e803c07fa6d5cf9a))
 * **deps:** bump to `sass` 1.97.1 ([b11dbca](https://github.com/unsass/em/commit/b11dbca2a041002d3de95514dc6c576ba5dc75a8))
 
-## <small>2.3.1 (2025-12-13)</small>
+## [2.3.1](https://github.com/unsass/em/compare/v2.3.0...v2.3.1) (2025-12-13)
 
-* chore(deps-dev): bump to `@commitlint/cli` 20.2.0 ([29a21f0](https://github.com/unsass/em/commit/29a21f0))
-* chore(deps-dev): bump to `sass-true` 10.0.1 ([b95836f](https://github.com/unsass/em/commit/b95836f))
-* chore(deps-dev): bump to `semantic-release` 25.0.2 ([cf02b18](https://github.com/unsass/em/commit/cf02b18))
-* chore(deps-dev): bump to `stylelint-config-unsass` 2.0.0 ([9fcb21f](https://github.com/unsass/em/commit/9fcb21f))
-* chore(deps-dev): bump to `stylelint-config-unsass` 2.2.0 ([c0fa483](https://github.com/unsass/em/commit/c0fa483))
-* chore(deps-dev): bump to `vitest` 3.2.3 ([98bf143](https://github.com/unsass/em/commit/98bf143))
+### Dependencies
+
 * chore(deps): bump to `@unsass/css` 3.0.1 ([2255205](https://github.com/unsass/em/commit/2255205))
 * chore(deps): bump to `sass` 1.96.0 ([09d1972](https://github.com/unsass/em/commit/09d1972))
-* ci: update `publish.yml` ([e424bc0](https://github.com/unsass/em/commit/e424bc0))
-* ci: use `release.config.js` instead of `.releaserc.json` ([87b770f](https://github.com/unsass/em/commit/87b770f))
 
-## 2.3.0 (2025-05-02)
+## [2.3.0](https://github.com/unsass/em/compare/v2.2.0...v2.3.0) (2025-05-02)
 
-* chore: removed unneeded `jest.config.js` file ([d1d0748](https://github.com/unsass/em/commit/d1d0748))
-* chore: switch to ESM ([5bfe490](https://github.com/unsass/em/commit/5bfe490))
-* chore(deps): bump to `sass-true` 8.1.0 ([98ad75e](https://github.com/unsass/em/commit/98ad75e))
-* chore(deps): bump to `stylelint` 16.16.0 ([8de961d](https://github.com/unsass/em/commit/8de961d))
-* chore(deps): clean `package-lock.json` ([aa2f30b](https://github.com/unsass/em/commit/aa2f30b))
-* chore(deps): prevent dependencies vulnerabilities ([969e525](https://github.com/unsass/em/commit/969e525))
-* chore(deps): prevent dependencies vulnerabilities ([37d2c68](https://github.com/unsass/em/commit/37d2c68))
-* test(deps): switch from jest to vitest ([26b4243](https://github.com/unsass/em/commit/26b4243))
-* ci: rename `node.js.yml` to `publish.yml` ([f920ddf](https://github.com/unsass/em/commit/f920ddf))
+### Features
+
 * feat(deps): bump to `@unsass/css` 3.0.0 ([13caf1f](https://github.com/unsass/em/commit/13caf1f))
 
 ## [2.2.0](https://github.com/unsass/em/compare/v2.1.0...v2.2.0) (2024-02-21)
