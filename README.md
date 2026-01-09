@@ -28,9 +28,9 @@ npm install @unsass/em
 
 ### Sass functions
 
-| Function              | Description                |
-|-----------------------|----------------------------|
-| `convert($values...)` | Convert `px` unit to `em`. |
+| Function              | Description                                                                          |
+|-----------------------|--------------------------------------------------------------------------------------|
+| `convert($values...)` | Convert `px` unit to `em`. The last value is used as the base font size calculation. |
 
 #### Convert with `em.convert()`
 
