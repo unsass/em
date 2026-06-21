@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="100%" style="display:block">
+    <defs>
+        <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+            <circle cx="0.8" cy="0.8" r="0.7" fill="#fff" opacity="0.04"/>
+        </pattern>
+        <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#0b5d58"/>
+            <stop offset="0.5" stop-color="#129b95"/>
+            <stop offset="1" stop-color="#1ad1cb"/>
+        </linearGradient>
+        <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#0b5d58"/>
+            <stop offset="0.5" stop-color="#129b95"/>
+            <stop offset="1" stop-color="#1ad1cb"/>
+        </linearGradient>
+        <clipPath id="frame">
+            <rect width="800" height="360" rx="12"/>
+        </clipPath>
+    </defs>
+
+    <!-- everything is clipped to the rounded frame so corners and the top bar follow the radius -->
+    <g clip-path="url(#frame)">
+        <rect width="800" height="360" fill="#101a24"/>
+        <rect width="800" height="360" fill="url(#dots)"/>
+        <rect width="800" height="2.5" fill="url(#bar)" opacity="0.95"/>
+
+        <!-- relative-size icon: two "A" glyphs sharing a baseline -->
+        <g transform="translate(400, 46)" fill="none" stroke="#1ad1cb" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M-19 16 L-10.5 -16 L-2 16 M-15 4 L-6 4"/>
+            <path d="M6 16 L12 -2 L18 16 M8.6 9 L15.4 9" opacity="0.85"/>
+            <line x1="-20" y1="16" x2="19" y2="16" opacity="0.4"/>
+        </g>
+
+        <!-- wordmark -->
+        <!-- "em" wordmark, outlined in Montserrat SemiBold -->
+        <path fill="#eeeeee"
+              d="M386.89 105.17Q384.66 105.17 383 104.29Q381.34 103.40 380.43 101.86Q379.51 100.33 379.51 98.33Q379.51 96.33 380.40 94.79Q381.29 93.25 382.85 92.38Q384.41 91.50 386.41 91.50Q388.36 91.50 389.89 92.35Q391.41 93.20 392.29 94.76Q393.16 96.33 393.16 98.40Q393.16 98.60 393.15 98.85Q393.14 99.10 393.11 99.33L382.64 99.33Q382.91 100.78 384.06 101.65Q385.21 102.53 386.96 102.53Q389.19 102.53 390.59 101.08L392.26 103Q390.41 105.17 386.89 105.17M382.61 97.25L390.19 97.25Q389.99 95.80 388.96 94.90Q387.94 94 386.41 94Q384.89 94 383.86 94.89Q382.84 95.78 382.61 97.25M400.29 105L397.16 105L397.16 91.65L400.14 91.65L400.14 93.33Q400.89 92.42 402.01 91.96Q403.14 91.50 404.51 91.50Q405.96 91.50 407.14 92.05Q408.31 92.60 409.01 93.75Q409.81 92.70 411.11 92.10Q412.41 91.50 414.01 91.50Q416.44 91.50 417.96 92.92Q419.49 94.35 419.49 97.35L419.49 105L416.36 105L416.36 97.75Q416.36 95.97 415.57 95.10Q414.79 94.22 413.36 94.22Q411.81 94.22 410.85 95.22Q409.89 96.22 409.89 98.22L409.89 105L406.76 105L406.76 97.75Q406.76 95.97 405.98 95.10Q405.19 94.22 403.76 94.22Q402.21 94.22 401.25 95.22Q400.29 96.22 400.29 98.22L400.29 105Z"/>
+        <text x="400" y="127" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="11"
+              fill="#1ad1cb" opacity="0.8">Sass functions and mixins to use em units</text>
+
+        <!-- code mockup: convert px to em -->
+        <rect x="130" y="152" width="540" height="168" rx="10" fill="#0c141d" stroke="#243341"/>
+        <rect x="130" y="152" width="540" height="28" rx="10" fill="#16212c"/>
+        <rect x="130" y="170" width="540" height="10" fill="#16212c"/>
+        <line x1="130" y1="180" x2="670" y2="180" stroke="#243341" stroke-width="0.75"/>
+        <circle cx="152" cy="166" r="4.5" fill="#ff5f57"/>
+        <circle cx="168" cy="166" r="4.5" fill="#febc2e"/>
+        <circle cx="184" cy="166" r="4.5" fill="#28c840"/>
+
+        <g font-family="ui-monospace,Menlo,monospace" font-size="13">
+            <text x="150" y="212">
+                <tspan fill="#1ad1cb">@use </tspan><tspan fill="#7fd88f">"@unsass/em"</tspan><tspan fill="#c8d0d4">;</tspan>
+            </text>
+            <text x="150" y="254">
+                <tspan fill="#c8d0d4">.foo {</tspan>
+            </text>
+            <text x="174" y="276">
+                <tspan fill="#c8d0d4">font-size: em.convert(</tspan><tspan fill="#e0a973">16px</tspan><tspan fill="#c8d0d4">, </tspan><tspan fill="#e0a973">16px</tspan><tspan fill="#c8d0d4">);</tspan>
+            </text>
+            <text x="150" y="298"><tspan fill="#c8d0d4">}</tspan></text>
+        </g>
+    </g>
+
+    <!-- crisp rounded border drawn on top, aligned with the clipped fill -->
+    <rect x="0.5" y="0.5" width="799" height="359" rx="11.5" fill="none" stroke="#2a3a47"/>
+</svg>
