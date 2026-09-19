@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.6.0](https://github.com/unsass/em/compare/v2.5.0...v2.6.0) (2026-09-19)
+
+### Dependencies
+
+* **deps:** bump @unsass/css to 3.3.0 ([5cd0c4a](https://github.com/unsass/em/commit/5cd0c4a4ba939023221dde849c0ece4cebeac8f0))
+* **deps:** require node >=22 ([d8a3899](https://github.com/unsass/em/commit/d8a38992543ec5a615b718a0f09980429a7cd16e))
+
 ## [2.5.0](https://github.com/unsass/em/compare/v2.4.0...v2.5.0) (2026-06-30)
 
 
