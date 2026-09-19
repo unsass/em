@@ -52,7 +52,7 @@ size, in `px`). Pass `$important: true` to append `!important`.
     @include em.declaration(font-size, 16px, 16px); // Single value.
     @include em.declaration(margin, 20px 30px, 16px); // Multiple values.
     @include em.declaration(border, 1px solid darkcyan, 16px); // Multiple mixed values.
-    @include em.declaration(box-shadow, 0 0 10px 5px rgba(darkcyan, 0.75), inset 0 0 10px 5px rgba(darkcyan, 0.75), 16px); // Comma-separated values.
+    @include em.declaration(box-shadow, (0 0 10px 5px rgba(darkcyan, 0.75), inset 0 0 10px 5px rgba(darkcyan, 0.75)), 16px); // Comma-separated values.
 }
 ```
 
